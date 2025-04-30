@@ -1,0 +1,41 @@
+--------------------------------------------------------------------------------------------------------------------------------------------
+TIPOS DE SERVIDORES - computadores especializadas em fornecer serviços, recursos ou dados para outros dispositivos ou computadores em uma rede. Projetados para lidar com solicitações e fornecer serviços específicos.
+Servidores web: responsáveis por hospedar sites e aplicativos web, respondendo a solicitações http de clientes (geralmente navegadores web).
+Servidores de Banco de Dados: Armazenam e gerenciam dados de maneira organizada, permitindo o acesso e a manipulação eficientes desses dados por outros sistemas.
+Servidores de E-mail? Gerenciam o envio, recebimento e armazenamento de e-mails.
+Servidores de Arquivos: Armnazenam e gerenciam arquivos compartilhados, permitindo que vários usuários acessem e modifiquem os mesmos arquivos em uma rede.
+Servidores de Aplicativos: Fornecem uma plataforma para executar e gerenciar aplicativos de software em uma rede, permitindo que os clientes acesem esses aplicativos remotamente.
+Servidores de Jogos: Responsáveis por hospedar e gerenciar jogos online, permitindo que vários jogadores interajam e joguem juntos pela internet.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+Servidores:
+Linux: é um dos sistemas operacionais mais populares devido á sua estabilidade, segurança e flexibilidade. Distruibuições populares incluem Ubuntu Server, CentOS, Debian e Red Hat Enterprise Linux (RHEL). 
+Windows Serrver: Desenvolvido pela Microsoft, o Windows Server é amplamente utilizado em ambientes corporativos e é conhecido por sua integração com outras tecnologias da Microsoft, como Active Directory, Exchange Server e 
+SQL Server. Ele oferece uma interface gráfica de usuário familiar para gerenciamento, bem como suporte para uma ampla variedade de aplicativos e serviços.
+Unix: é uma família de sistema operacionais que inclui variantes como FreeBSD, OpenBSD, NetBSD e macOS (baseado no Darwin, uma versão do Unix). Unix é conhecido por sua estabilidade, desempenho e robustez, sendo 
+frequentamente utilizado em servidores de alto desempenho e ambientes de missão crítica.
+FreeBSD: Uma variedade do Unix, o FreeBSD é conhecido por sua confiabilidade e desempenho, sendo frequentemente usado em servidores de rede, provedores de serviços de internet e em sistemas de armazenamento em rede (NAS).
+VMware ESXI: é uma plataformad e virtualização que permite executar múltiplos sistemas operacionais e aplicativos em um único servidor físico. Ele é amplamente utilizado em ambientes de virtualização de data center para 
+consolidar recursos, aumentar a eficiência e simplificar a gest]ao de servidores.
+--------------------------------------------------------------------------------------------------------------------------------------------
+Em um servidor pode se encixar diversos discos rigidos de mesmo tamanho
+RAID De Servidores
+RAID (Redundant Array of Independent Disks) é uma técnica que combina múltiplos discos para melhorar o desempenho e a resiliência do armazenamento. As dfierentes configurações de RAID oferecem níveis variados de proteção de dados e desempenho.
+é importante backups
+Raid 0 Stripping: pega varios discos rígidos e somam suas capacidades como um - adequado para aplicações de alto desxempenho que exigem alta velocidade  de leitura/gravação. Se um disco morre o servidor para.
+Raid 1 mirroring: Se eu tenho 6 discos ele utiliza 3 discos aonde os 3 restantes serão uma copia exata dos outros 3 discos, Ideal para proteção de dados críticos e ambientes de servidor essenciais. Se um disco rígido 
+morre, a copia exata continua rodando, e caso o morto seja substituido vai preencher com as informações do disco espelhado.
+Raid 5: combina desempenho e redundância, distribuindo a paridade de dados entre os discos - utilizando o xor *exclusivo ou*
+D1 10110010 | D1 10110010 |
+D2 11001100 | P  01111110 |
+P  01111110 | D2 11001100 |
+(é possivel com mais de 2 discos)
+
+
+A placa de controlador de raid utiliza seu desempenho da seguinte forma, se um dos discos falhar o uso da CPU aumenta para continuar o funcionamento calculando a paridade do conteúdo que falhou, após a troca do disco rígido
+que falhou o uso da CPU aumenta mais ainda, pois continua calculando a paridade para continuar o funcionamento e ao mesmo tempo ele escreve o código no disco novo.
+
+Raid 10: Oferece desempenho e redundância máximos, combinando espelhamento e striping. É ideal para aplicações críticas que exigem alta disponibilidade e desempenho superior. Ele espelha e utiliza a capacidade dos discos
+e caso o número de discos sejam impar ele usa o ultimo disco como um step (pneu) para caso um disco falhe já tenha um disco reserva para fazer o backup, porém esse step não adiciona desempenho enquanto é apenas um step.
+
+7 a 9 de maio, semana de tecnologia - precisa se cadastrar no site - comparecer nos 3 dias +10hrs complementares e valem presença.
